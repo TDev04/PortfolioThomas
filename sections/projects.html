@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Dragutan Turcan">
+    <link rel="shortcut icon" href="../resource/logo_n.png" />
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/aboutme.css">
+    <title>Projects</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img class="logo" src="../resource/logo_n.png">
+                <img class="guionLogo" src="../resource/logoooofdg.png">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu" data-animation="to-bottom">
+                <li><a onclick="historyClick()" href="../index.html"><span> Home</span><span>👋
+                        </span></a></li>
+                <li><a href="aboutMe.html">
+                        <span>About me</span><span>👤</span>
+                    </a></li>
+                <li><a href="projects.html">
+                        <span>Projects</span>
+                        <span>🗃️</span>
+                    </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainAboutMe">
+        <br>
+        <div class="thomas">Projects<br></br>
+
+        </div>
+
+        <hr>
+        <div class="info2">
+            <div class="About">EZFCT Project</div>
+
+            <div>
+                <p class="content2">
+                    EasyFCT is a project designed to transform the management of training internships in Vocational
+                    Training (VET) centers. Its main objective is to overcome the limitations of current systems such as
+                    qBid and others,
+                    offering a modern, efficient and adaptable solution to the specific needs of each center. With an
+                    intuitive interface and advanced functionalities, EasyFCT enhances the user experience and
+                    facilitates the interaction
+                    between the different users of the Workplace Training (WTC) process, with its own API, and a
+                    complete custom bearer authentification service.
+                    Project developed during my studies between <b class="jobCont2">2024 - 2025</b>.</p>
+                <ul class="lenguajes">
+                    <li>Java</li>
+                    <li>ReactJS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+
+                <img id="pack1" class="imgProjects" src="../resource/tfg1.png"><br>
+
+                <div class="btns">
+                    <button class="btn" onclick="changePhoto(-1)">Back</button>
+                    <button class="btn" onclick="changePhoto(1)">Next</button>
+                </div>
+
+                <br>
+                <script>
+
+                    let max = 6;
+                    let actual = 1
+
+                    function changePhoto(dir) {
+                        actual += dir;
+                        img = document.getElementById("pack1").src
+
+                        if (actual > max) {
+                            actual = 1;
+                        } else if (actual < 1) {
+                            actual = max;
+                        }
+
+                        document.getElementById("pack1").src = '../resource/tfg' + actual + '.png'
+                        console.log(document.getElementById("pack1").src)
+
+                    }
+
+
+
+                </script>
+
+
+                <a class="enlacesp" href="https://github.com/TDev04/EZFCT"><span><img src="../resource/github(2).png">
+                        Link to the project</span></a><br><br>
+            </div>
+        </div><br><br>
+        <hr>
+        <div class="info2">
+            <div class="About">Internship Project</div>
+
+            <div>
+                <p class="content2">
+                    A Java-based application designed to manage employee attendance using NFC technology. The system
+                    integrates with an SQL database and provides two main interfaces: a simple user-facing screen for
+                    NFC-based check-in/out, and an administrative dashboard with secure login to manage users, view
+                    attendance logs, and update records. Additional features include automatic daily adjustments for
+                    incomplete check-outs and NFC device detection in real-time. Developed during <b
+                        class="jobCont2">2024 - 2025</b>.</p>
+                <ul class="lenguajes">
+                    <li>Java</li>
+                    <li>SQL</li>
+                    <li>XML</li>
+                </ul>
+
+                <img id="pack2" class="imgProjects" src="../resource/1.png"><br>
+
+                <div class="btns">
+                    <button class="btn" onclick="changePhoto1(-1)">Back</button>
+                    <button class="btn" onclick="changePhoto1(1)">Next</button>
+                </div>
+
+                <br>
+                <script>
+
+                    let max2 = 3;
+                    let actual2 = 1
+
+                    function changePhoto1(dir) {
+                        actual2 += dir;
+                        img = document.getElementById("pack2").src
+
+                        if (actual2 > max2) {
+                            actual2 = 1;
+                        } else if (actual2 < 1) {
+                            actual2 = max2;
+                        }
+
+                        document.getElementById("pack2").src = '../resource/' + actual2 + '.png'
+                        console.log(document.getElementById("pack2").src)
+
+
+                    }
+
+                </script> <a class="enlacesp" href="https://github.com/TDev04/GeneralitatAsistencia"><span><img
+                            src="../resource/github(2).png"> Link to the project</span></a><br><br>
+
+            </div>
+        </div><br><br>
+        <hr>
+        <div class="info2">
+            <div class="About">The UROS Project</div>
+
+            <div>
+                <p class="content2">
+                    First challenging project I've began. The UROS Project, is a minimalistic 32-bit operating system
+                    that currently
+                    handles graphics, keyboard input, basic RAM manipulation, tested with self encryption memory using a
+                    modified
+                    symmetrical algorithm. Developed during <b class="jobCont2">2022-2023</b>.</p>
+                <ul class="lenguajes">
+                    <li>C/C++</li>
+                    <li>x86-64 Assembly</li>
+                    <li>C#</li>
+                </ul>
+
+                <img class="imgProjects" src="../resource/os1.png"><br><br>
+                <a class="enlacesp" href="https://github.com/TDev04/UROS-Kernel"><span><img
+                            src="../resource/github(2).png"> Link to the project</span></a><br><br>
+
+            </div>
+        </div><br><br>
+        <hr>
+        <div class="info2">
+            <div class="About">Remote Minecraft Server Initializer</div>
+            <div>
+                <p class="content2">
+                    This was the first project I began when I got my first VPS, a pretty basic fullstack project,
+                    Discord being my chat-frontend app and all the backend in a VPS with Python. Developed during <b
+                        class="jobCont2">2021-2022</b>.</p>
+                <ul class="lenguajes">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Bash</li>
+                </ul>
+
+                
+                <br><br>
+                <a class="enlacesp" href="https://github.com/TDev04/Minecord"><span><img
+                            src="../resource/github(2).png"> Link to the project</span></a><br><br>
+
+            </div>
+        </div><br><br>
+        <hr>
+
+
+
+        <div class="About">Summary </div>
+        <p class="content2">
+
+            Description 1 <b class="jobCont2">Bolder of description</b>
+            .</p>
+        <br><br>
+        <hr>
+        <div class="About">Github </div><br>
+        <a class="enlacesp" href="https://github.com/TDev04"><span><img src="../resource/github(2).png">Visit my Github
+                account</span></a><br><br>
+
+
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="mailto:tuemail@gmail.com"><span><img src="../resource/github(2).png">
+                    thdragu.15@gmail.com</span></a>
+            <a href="tel: +34677647232"><span><img src="../resource/llamada-telefonica.png"> +34 677 64 72 32</span></a>
+            <a href="https://www.linkedin.com/in/thomas-dragutan-2a4751250/" target="_blank"><span><img
+                        src="../resource/linkedin(1).png"> LinkedIn</span></a>
+            <a href="https://github.com/TDev04" target="_blank"><span><img src="../resource/github(2).png">
+                    GitHub</span></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
